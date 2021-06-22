@@ -1,0 +1,45 @@
+<%- include('partials/header'); -%>
+<body>
+ <h1>Aws Objects</h1>
+    <form  action="/" method="post">
+        <div class="form-group">
+    <input type="text" class="form-control" name="bucket" id="bucket"  value="hcp-8da2bd2a-eb08-4998-baf0-3ceae565e40d">
+        </div>
+    <div class="form-group">
+    <input type="password" class="form-control" name="accesskey" id="access" value="AKIAQT4HBU7563FD4N6E">
+    </div>
+    <div class="form-group">
+    <input type="password"  class="form-control" name="secret" id="secret" value="npnV1EiUb9cj0TA5FribwyS1jOe2SNmf/cUis/ea">
+    </div>
+   
+    <div class="form-group">
+            <input type="text" class="form-control"  name="prefix" id="prefix" placeholder="amitava"  required="true"  >
+    </div>
+
+    <div class="form-group">
+        <input type="text" class="form-control" name="filesaved" id="filesaved" placeholder="some_model_name.pb"  required="true"  >
+</div>
+
+    <div class="form-group">
+        <button class="btn btn-primary" type="submit">Submit</button>
+    
+    
+    </form>
+
+    <form action="/list" method="post">
+    
+        <div class="form-group">
+            <input type="text" class="form-control" name="bucket" id="bucket"  value="hcp-8da2bd2a-eb08-4998-baf0-3ceae565e40d">
+                </div>
+    
+        <div class="form-group">
+            <input type="text" class="form-control"  name="prefix" id="prefix" placeholder="amitava" required="true">
+    </div>
+
+    <div class="form-group">
+        <button class="btn btn-primary" type="submit">Files in a folder</button>
+    </form>
+
+   
+</body>
+</html>

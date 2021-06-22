@@ -1,0 +1,21 @@
+<h1>List of all files</h1>
+
+<table border="1">
+    <tr>
+       <th>Key</th>
+       <th>LastModified</th>
+       <th>Etag</th>
+       <th>Size</th>
+       <th>StorageClass</th>
+    </tr>
+ 
+    <% for (var i = 0; i < content.length; i++) { %>
+     <tr>
+       <td><%= content[i].Key %></td>
+       <td><%= content[i].LastModified %></td>
+       <td><%= content[i].Etag %></td>
+       <td><%= content[i].Size %></td>
+       <td><%= content[i].StorageClass %></td>
+     </tr>    
+    <% } %>
+ </table>
